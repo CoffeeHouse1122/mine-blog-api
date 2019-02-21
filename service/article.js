@@ -40,4 +40,23 @@ Article.findAllCategory = () => {
     });
 };
 
+/**
+ * @msg: 获得id的文章
+ * @param {type} 
+ * @return: 该id文章数据
+ */
+Article.findIdActicle = (id) => {
+  return mineArticle
+    .findById(id, {
+      raw: true
+    })
+    .then(results => {
+      // console.log(results)
+      return results;
+    })
+    .catch(err => {
+      return err;
+    });
+};
+// Article.findIdActicle(1)
 module.exports = Article;
