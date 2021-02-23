@@ -20,16 +20,26 @@ module.exports = db; // 用module.exports暴露出这个接口
 */
 
 var Sequelize = require("Sequelize");
+const Op = Sequelize.Op
 const sequelize = new Sequelize("mine-blog-api", "root", "password", {
   host: "localhost",
   port: "3306",
   dialect: "mysql",
   timezone: "+08:00",
+  operatorsAliases: {
+    $and: Op.and,
+    $or: Op.or,
+    $eq: Op.eq,
+    $gt: Op.gt,
+    $lt: Op.lt,
+    $lte: Op.lte,
+    $like: Op.like
+  },
   pool: {
     max: 5,
     min: 0,
-    idle: 10000
-  }
+    idle: 10000,
+  },
 });
 
 exports.sequelize = sequelize;

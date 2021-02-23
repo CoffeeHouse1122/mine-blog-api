@@ -12,10 +12,10 @@ exports.mineArticle = sequelize.define(
     createtime: { type: Sequelize.TIME },
     updatetime: { type: Sequelize.TIME },
     readnum: { type: Sequelize.INTEGER },
-    likenum: { type: Sequelize.INTEGER }
+    likenum: { type: Sequelize.INTEGER },
   },
   {
     freezeTableName: true,
-    timestamps: false
+    timestamps: false,
   }
 );

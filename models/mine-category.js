@@ -7,10 +7,10 @@ exports.mineCategory = sequelize.define(
     id: { type: Sequelize.INTEGER, primaryKey: true },
     category_id: { type: Sequelize.INTEGER },
     category_name: { type: Sequelize.STRING },
-    category_num: { type: Sequelize.INTEGER }
+    category_num: { type: Sequelize.INTEGER },
   },
   {
     freezeTableName: true,
-    timestamps: false
+    timestamps: false,
   }
 );
