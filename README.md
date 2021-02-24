@@ -1,5 +1,39 @@
 ## mine-blog 后端
 
+### 目录结构
+
+```
+mine-blog-api
+├── app.js
+├── bin
+│   └── www
+├── database
+│   └── config.js
+├── models
+│   ├── mine-article.js
+│   └── mine-category.js
+├── package-lock.json
+├── package.json
+├── public
+│   ├── images
+│   ├── javascripts
+│   └── stylesheets
+│       └── style.css
+├── README.md
+├── routes
+│   ├── article.js
+│   ├── index.js
+│   └── users.js
+├── service
+│   └── article.js
+├── tree.md
+├── tree.txt
+└── views
+    ├── error.jade
+    ├── index.jade
+    └── layout.jade
+```
+
 ### 技术框架：node+express
 
 ### 项目结构：
